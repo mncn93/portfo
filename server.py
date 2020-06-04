@@ -20,7 +20,7 @@ def write_data_to_file(input_data):
 
 def write_data_to_csv(input_data):
     with open('database2.csv',mode='a') as database2:
-        email = i   nput_data["email"]
+        email = input_data["email"]
         subject = input_data["subject"]
         message = input_data["message"]
         csv_writer = csv.writer(database2,delimiter=',',quotechar='"',quoting=csv.QUOTE_MINIMAL)
